@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import bodyParser from 'body-parser';
-import home from './controllers/home';
+import cars from './controllers/cars';
 
 export default function () {
   const apiRouter = Router();
@@ -8,7 +8,7 @@ export default function () {
   apiRouter.use(bodyParser.json());
   apiRouter.use(bodyParser.urlencoded({ extended: false }));
 
-  home(apiRouter);
+  cars(apiRouter);
 
   return apiRouter;
 }

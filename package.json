@@ -1,12 +1,15 @@
 {
-  "name": "interview",
+  "name": "car-search-api",
   "version": "1.0.0",
-  "description": "interview",
+  "description": "car-search-api",
   "main": "src/index.js",
   "scripts": {
     "lint": "eslint src/**",
     "test": "NODE_ENV=test mocha",
-    "start": "NODE_ENV=development nodemon --exec babel-node ./src/index"
+    "start": "NODE_ENV=development nodemon --exec babel-node ./src/index",
+    "clean": "rm -rf build && mkdir build",
+    "build": "npm run clean && babel -d ./build ./src -s",
+    "prod": "NODE_ENV=production node ./build/index"
   },
   "standard": {
     "env": [

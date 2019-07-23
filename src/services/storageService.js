@@ -8,10 +8,32 @@ const brands = [
 ];
 
 const models = [
-  { id: 'aston', models: ['Aston Rapid S', 'Vantage', 'DB9'] },
-  { id: 'honda', models: ['Vezel', 'Brio', 'City'] },
-  { id: 'merc', models: ['Coupe', 'Suv'] },
-  { id: 'toyota', models: ['Prius', 'Yaris'] }
+  {
+    id: 'aston', models: [
+      { id: '1', name: 'Aston Rapid S' },
+      { id: '2', name: 'Vantage' },
+      { id: '3', name: 'DB9' }
+    ]
+  },
+  {
+    id: 'honda', models: [
+      { id: '4', name: 'Vezel' },
+      { id: '5', name: 'Brio' },
+      { id: '6', name: 'City' }
+    ]
+  },
+  {
+    id: 'merc', models: [
+      { id: '7', name: 'Coupe' },
+      { id: '8', name: 'Suv' },
+    ]
+  },
+  {
+    id: 'toyota', models: [
+      { id: '9', name: 'Prius' },
+      { id: '10', name: 'Yaris' },
+    ]
+  }
 ];
 
 export function fetchModelsByBrand(brandId) {

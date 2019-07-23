@@ -1,7 +1,7 @@
 import { fetchModelsByBrand } from '../../services/storageService';
 
 /**
- * GET /cars/brands
+ * GET /cars/models?brand=${brandId}
  */
 export default async function getCarsModels(req, res) {
   const { brand } = req.query;
